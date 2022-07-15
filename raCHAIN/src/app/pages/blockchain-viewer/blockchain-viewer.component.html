@@ -1,0 +1,10 @@
+<div class="container">
+    <h1>Blocks on Chain</h1>
+    <p>Each card represents a block on the chain. Click to see their transactions</p>
+    
+    <app-block-view>
+        *ngFor="let block of blocks"
+        [block] = "block"
+    </app-block-view>
+
+</div>
